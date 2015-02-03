@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.version     = UpdateIfChanged::VERSION
   s.authors     = ["Kevin Bongart"]
   s.email       = ["contact@kevinbongart.net"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of UpdateIfChanged."
-  s.description = "TODO: Description of UpdateIfChanged."
+  s.homepage    = "https://github.com/KevinBongart/update_if_changed"
+  s.summary     = "ActiveRecord#update, but only when needed."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
