@@ -1,4 +1,4 @@
-# update_if_changed
+# update_if_changed [![Circle CI](https://circleci.com/gh/KevinBongart/update_if_changed.svg?style=svg)](https://circleci.com/gh/KevinBongart/update_if_changed) [![Code Climate](https://codeclimate.com/github/KevinBongart/update_if_changed/badges/gpa.svg)](https://codeclimate.com/github/KevinBongart/update_if_changed)
 
 Ruby on Rails' [`ActiveRecord#update`](http://apidock.com/rails/ActiveRecord/Persistence/update), but only when needed.
 
