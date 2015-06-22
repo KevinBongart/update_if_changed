@@ -27,6 +27,15 @@ describe "ActiveRecord#update_if_changed" do
       expect(foo.qux).to eq false
     end
 
+    it "updates the record, even if only one attribute changes" do
+      foo.update_if_changed(bar: "test", baz: 123, qux: false)
+      foo.reload
+
+      expect(foo.bar).to eq "test"
+      expect(foo.baz).to eq 123
+      expect(foo.qux).to eq false
+    end
+
     it "doesn't update the record if the record hasn't changed" do
       expect(foo).not_to receive(:update)
       foo.update_if_changed(bar: "test", baz: 123, qux: true)
